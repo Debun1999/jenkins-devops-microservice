@@ -19,13 +19,13 @@ pipeline {
 				}
 			}
 		} post{
-			always{
+			always {
 				echo 'I am Awesome'
 			}
-			success{
+			success {
 				echo 'Pipeline run Successful'
 			}
-			failure{
+			failure {
 				echo 'Pipeline run failed'
 			}
 		}
