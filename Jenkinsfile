@@ -18,5 +18,15 @@ pipeline {
 					echo "Integration Test"
 				}
 			}
+		} post{
+			always{
+				echo 'I am Awesome'
+			}
+			success{
+				echo 'Pipeline run Successful'
+			}
+			failure{
+				echo 'Pipeline run failed'
+			}
 		}
 }
